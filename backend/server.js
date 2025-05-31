@@ -3,7 +3,7 @@ const cors = require("cors");
 const app = express();
 const port = 3001;
 
-// Middleware
+
 app.use(cors());
 app.use(express.json());
 
@@ -11,7 +11,7 @@ app.use(express.json());
 let notes = [];
 let nextId = 1;
 
-// GET /notes - return all notes
+
 app.get("/notes", (req, res) => {
   res.json(notes);
 });
